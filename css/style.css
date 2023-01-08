@@ -1,0 +1,124 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+    max-width: 100vh;
+}
+body {
+    background-color: #eeeeee;
+    padding: 0px 35px;
+    width: 100%;
+}
+header {
+    width: 100%;
+    height: 50px;
+    background-color: #212121;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 111;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 0 35px;
+}
+header a{
+    text-decoration: none;
+    color: white;
+    font-weight: 600;
+}
+/* profile */
+.profile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.image img{
+    width: 110px;
+    border-radius: 50%px;
+}
+.title {
+    margin-left: 15px;
+}
+.title h1{
+    font-size: 32px;
+    line-height: 1;
+}
+.title p {
+    font-size: 12px;
+}
+/* socmed */
+.socmed {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 32px;
+    padding: 45px 0px;
+}
+.socmed a{
+    text-decoration: none;
+    color: #212121;
+}
+/* productlist */
+.productlist {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    text-align: center;
+    gap: 25px;
+}
+.productlist a{
+    background-color: #ffcf27;
+    width: 100%;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 0px;
+    color: #212121;
+    border-radius: 10px;
+}
+/* search */
+.search {
+    display: flex;
+    justify-content: center;
+    margin: 45px 0px;
+}
+input[type="search"] {
+  width: 300px;
+  height: 40px;
+  font-size: 18px;
+  color: #333;
+  background-color: #fff;
+  border: 2px solid #333;
+  border-radius: 5px;
+  padding: 0 10px;
+}
+button[type="submit"] {
+  width: 50px;
+  height: 40px;
+  font-size: 18px;
+  color: #fff;
+  background-color: #333;
+  border: none;
+  border-radius: 5px;
+}
+/* carousel */
+.grid {
+    width: 100%;
+}
+.productgrid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+}
+.productgrid img{
+    width: 170px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 20px;
+}
